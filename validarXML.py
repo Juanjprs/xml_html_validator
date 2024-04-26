@@ -45,8 +45,7 @@ def validar_xml(xml_file, xsd_file):
     if errorsOrdem:
         print("\nO XML não está na ordem correta de acordo com o XML Schema fornecido. Corrija os elementos",errorsOrdem)
 
-    if len(errorsOrdem) == 0 and len(errors) == 0:
-        print("\nO XML é válido de acordo com o XML Schema fornecido.")
+    
 
     # Extrair todas as tags definidas no XSD
     xsd_tags = set()
@@ -71,7 +70,8 @@ def validar_xml(xml_file, xsd_file):
         for tag in unused_tags:
             print(tag)
     else:
-        exit()
+        if len(errorsOrdem) == 0 and len(errors) == 0:
+            print("\nO XML é válido de acordo com o XML Schema fornecido.")
 
 # Arquivo XML a ser validado
 xml_file = "testeX.xml"

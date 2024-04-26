@@ -14,7 +14,6 @@
               <xs:element name="author" type="xs:string"/>
               <xs:element name="genre" type="xs:string"/>
               <xs:element name="published" type="xs:integer"/>
-              <xs:element name="nome" type="xs:string"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

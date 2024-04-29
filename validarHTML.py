@@ -30,7 +30,7 @@ def validar_html(html_file):
         print("O HTML é válido.")
 
 # HTML a ser validado
-html_file = "teste.html"
+html_file = "testeH.html"
 
 # Chamada da função de validação
 validar_html(html_file)
